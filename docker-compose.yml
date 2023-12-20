@@ -1,0 +1,7 @@
+version: "3.10"
+services:
+  beamsrv:
+    build: .
+    ports:
+      - "30814:30814/tcp"
+      - "30814:30814/udp"
