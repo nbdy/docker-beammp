@@ -5,9 +5,9 @@ RUN apt-get update ; \
     apt-get install -y wget liblua5.3
 
 WORKDIR /beammp
-RUN wget https://github.com/BeamMP/BeamMP-Server/releases/download/v3.1.3/BeamMP-Server-debian ; \
-    chmod +x BeamMP-Server-debian
+RUN wget https://github.com/BeamMP/BeamMP-Server/releases/download/v3.4.1/BeamMP-Server.debian.12.x86_64 ; \
+    chmod +x BeamMP-Server.debian.12.x86_64
 
 ADD ServerConfig.toml /beammp/ServerConfig.toml
 
-ENTRYPOINT ["/beammp/BeamMP-Server-debian"]
+ENTRYPOINT ["/beammp/BeamMP-Server.debian.12.x86_64"]
