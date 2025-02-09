@@ -5,4 +5,4 @@ services:
       - "30814:30814/tcp"
       - "30814:30814/udp"
     volumes:
-      - ./levels:/beammp/levels
+      - ./resources:/beammp/Resources/Client
